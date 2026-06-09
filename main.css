@@ -129,11 +129,10 @@ background:#1A1A1A;
   border: #0f2e17 5px solid;
   font-weight: bold;
 }
-.Remox-Code:hover{
-  padding: 5px 10px 5px 10px;
-  transition: ease 0.50s;
-    border: #2b783e 5px solid;
-      background-color: #ffffffda;
-        color: rgb(0, 0, 0);
-          font-weight: bolder;
+.Remox-Code:hover {
+  transition: ease 0.5s;
+  border: #2b783e 5px solid;
+  background-color: #c4c4c4da;
+  color: rgb(0, 0, 0);
 }
+
