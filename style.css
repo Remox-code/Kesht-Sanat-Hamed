@@ -153,6 +153,132 @@ border-radius:15px;
   border: #000000d0 4px solid;
   transition: ease 0.25s;
 }
+/* order*/
+.order {
+  margin: 24px auto;
+  padding: 30px 16px;
+  border-radius: 20px; /* کمی گردتر */
+  background:
+    radial-gradient(
+      circle at 20% 0%,
+      rgba(255, 255, 255, 0.75) 5%,
+      rgba(255, 255, 255, 0) 60%
+    ),
+    linear-gradient(135deg, rgba(31, 117, 70, 0.2), rgba(173, 92, 40, 0.15)); /* ترکیب سبز و قهوه ای/زرد */
+  border: 1px solid rgba(77, 52, 2, 0.25); /* حاشیه قهوه ای ملایم */
+  box-shadow:
+    0 12px 35px rgba(0, 0, 0, 0.07),
+    /* سایه کمی بیشتر */ inset 0 1px 0 rgba(255, 255, 255, 0.5); /* نور داخلی */
+  position: relative;
+  overflow: hidden;
+}
+
+/* رگه/برگ تزئینی خیلی ساده */
+.order::before {
+  content: "";
+  position: absolute;
+  inset: -40px -40px auto -40px;
+  height: 150px;
+  background: linear-gradient(
+    90deg,
+    rgba(31, 117, 70, 0.22),
+    rgba(31, 117, 70, 0)
+  );
+  transform: rotate(-7deg);
+  pointer-events: none;
+  filter: blur(2px); /* کمی محو */
+}
+
+.order h1 {
+  text-align: center;
+  margin-bottom: 20px; /* فاصله بیشتر */
+  color: #1f7546; /* سبز پررنگ */
+  font-size: 40px; /* کمی بزرگتر */
+  letter-spacing: 0.5px;
+  text-shadow: 0 3px 15px rgba(31, 117, 70, 0.25); /* سایه قوی تر */
+}
+
+/* لینک‌ها مثل کارت */
+.order-links {
+  display: flex;
+  justify-content: center; /* وسط چین کردن */
+  gap: 20px; /* فاصله بین لینک‌ها */
+  flex-wrap: wrap;
+}
+
+.order a {
+  text-decoration: none;
+  font-size: 20px; /* کمی کوچکتر */
+  font-weight: 700;
+  color: #124b2b; /* سبز لجنی */
+
+  padding: 14px 18px; /* پدینگ بیشتر */
+  border-radius: 16px; /* گردتر */
+
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, 0.95),
+    rgba(255, 255, 255, 0.75)
+  ); /* کرم روشن */
+  border: 1px solid rgba(18, 75, 43, 0.22); /* حاشیه سبز ملایم */
+
+  box-shadow:
+    0 10px 20px rgba(0, 0, 0, 0.08),
+    /* سایه کمتر */ inset 0 1px 0 rgba(255, 255, 255, 0.7); /* نور داخلی */
+
+  position: relative;
+  transform: translateY(0);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease,
+    border-color 0.3s ease,
+    filter 0.3s ease,
+    padding 0.3s ease; 
+  display: inline-flex; 
+  align-items: center;
+}
+
+.order a::after {
+  content: "";
+  position: absolute;
+  left: 22px;
+  right: 22px;
+  bottom: 16px; 
+  height: 4px; 
+  border-radius: 999px;
+  background: linear-gradient(
+    90deg,
+    #a3e635,
+    #4ade80,
+    #facc15
+  );
+  opacity: 0;
+  transform: scaleX(0.3); 
+  transition:
+    opacity 0.3s ease,
+    transform 0.3s ease;
+}
+
+.order a:hover {
+  transform: translateY(-8px); 
+  padding: 20px 24px; 
+  border-color: rgba(22, 163, 74, 0.45); 
+  box-shadow:
+   0 20px 30px rgba(0, 0, 0, 0.15),
+   0 0 0 8px rgba(34, 197, 94, 0.18),
+   inset 0 1px 0 rgba(255, 255, 255, 0.85);
+  filter: saturate(1.1); 
+}
+
+.order a:hover::after {
+  opacity: 1;
+  transform: scaleX(1); 
+}
+
+.order a:focus-visible {
+  outline: 4px solid rgba(34, 197, 94, 0.4);
+  outline-offset: 6px;
+}
 /* contact */
 
 .contact{
