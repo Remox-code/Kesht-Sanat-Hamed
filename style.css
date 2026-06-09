@@ -137,21 +137,21 @@ object-fit:cover;
 border-radius:15px;
 }
 
-.Namakaran{
+.Namakaran {
   text-decoration: none;
   color: black;
-  font-size: 20px;
+  font-size: 18px;
   background-color: #fed877;
-  padding: 10px;
-  border-radius: 30px;
-    font-weight: bold;
-    text-align: center;
+  padding: 10px 0;
+  border-radius: 10px;
+  font-weight: bold;
+  text-align: center;
+  border: #00000000 4px solid;
 }
 
-.Namakaran:hover{
-  border: #00000062 2px solid;
+.Namakaran:hover {
+  border: #000000d0 4px solid;
   transition: ease 0.25s;
-  font-size: 18px;
 }
 /* contact */
 
