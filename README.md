@@ -1,2 +1,2 @@
 # Kesht-Sanat-Hamed
-a website for a farm
+A site for a farmer🧑‍🌾- to introduce, categorize and sell products online 🔥 Suitable for all devices ✅
