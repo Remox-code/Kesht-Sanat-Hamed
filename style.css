@@ -357,6 +357,9 @@ height:100px;
 .gallery-grid{
 grid-template-columns:repeat(auto-fit,minmax(100px,1fr));
 }
+  .order h1 {
+    font-size: 25px; /* کمی کوچکتر */
+  }
 }
 /*///////////////////////////////// responsiv  480 ////////////////////////////////////// */
 
