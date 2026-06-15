@@ -2,9 +2,10 @@
 <html>
 <head>
     <title>زعفران</title>
-    <link type="text/css" rel="stylesheet" href="../../main.css">
+    <link type="text/css" rel="stylesheet" href="../../all-pages-css-js/all.css">
     <link type="text/css" rel="stylesheet" href="restaurant.css">
-
+    <link type="text/css" rel="stylesheet" href="../common css/footer.css">
+    <link type="text/css" rel="stylesheet" href="../common css/product.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="یک سایت برای محصولات کشاورزی و دامداری">
@@ -40,90 +41,100 @@
   <a href="../get in touch/get in touch.html">تماس با ما</a>
 </nav>
 
-<section class="menu-category">
-  <h2 id="title">انواع کباب</h2>
- <table class="menu-table">
-    <thead>
-      <tr>
-        <th>عکس</th>
-        <th>نام</th>
-        <th>قیمت</th>
-      </tr>
-    </thead>
-    <tbody>
-      <tr>
-        <td><img src="../../images/kabab.webp" alt="کباب کوبیده" class="menu-img"></td>
-        <td>کباب کوبیده</td>
-        <td>150,000 تومان</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td><img src="../../images/kabab.webp" alt="کباب کوبیده" class="menu-img"></td>
-        <td>کباب کوبیده</td>
-        <td>150,000 تومان</td>
-      </tr>
-    </tbody>
-  </table>
+<!-- ---------------menu ------------------->
+<main class="menu">
 
-  <!-- Modal -->
-  <div class="modal" id="imageModal">
-    <img id="modalImage" src="" alt="نمایش بزرگ تصویر">
-  </div>
+  <!-- Kabab Category -->
+  <section class="menu-category">
+    <h2 id="title">انواع کباب</h2>
+    <div class="product-grid"> <!-- این div محصولات رو در کنار هم قرار میده -->
 
-</section>
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/kabab.webp" alt="کباب کوبیده" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/ideh-large.jpg">
+        <h3 class="product-name">کباب کوبیده ممتاز</h3>
+        <p class="product-price">۱۵۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
 
-<section class="menu-category">
-  <h2 id="title">انواع ماهی</h2>
- <table class="menu-table">
-    <tbody>
-      <tr>
-        <td><img src="../../images/fish-resturant.jpg" alt="کباب ماهی" class="menu-img"></td>
-        <td>کباب ماهی</td>
-        <td>150,000 تومان</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td><img src="../../images/fish-resturant.jpg" alt="کباب ماهی" class="menu-img"></td>
-        <td>کباب ماهی</td>
-        <td>150,000 تومان</td>
-      </tr>
-    </tbody>
-  </table>
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/kabab.webp" alt="جوجه کباب" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/-large.jpg">
+        <h3 class="product-name">جوجه کباب مخصوص</h3>
+        <p class="product-price">۱۸۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
 
-  <!-- Modal -->
-  <div class="modal" id="imageModal">
-    <img id="modalImage" src="" alt="نمایش بزرگ تصویر">
-  </div>
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/kabab.webp" alt="کباب برگ" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/-large.jpg">
+        <h3 class="product-name">کباب برگ سلطانی</h3>
+        <p class="product-price">۲۵۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
+        
 
-</section>
+    </div>
+  </section>
+
+  <!-- Fish Category -->
+  <section class="menu-category">
+    <h2 id="title">انواع ماهی</h2>
+    <div class="product-grid">
+
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/fish-resturant.jpg" alt="ماهی سی باس" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/rge.jpg">
+        <h3 class="product-name">ماهی سی باس گریل</h3>
+        <p class="product-price">۲۲۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
+
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/fish-resturant.jpg" alt="ماهی سالمون" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/ge.jpg">
+        <h3 class="product-name">ماهی سالمون کبابی</h3>
+        <p class="product-price">۲۸۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
+
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/fish-resturant.jpg" alt="ماهی سالمون" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/ge.jpg">
+        <h3 class="product-name">ماهی سالمون کبابی</h3>
+        <p class="product-price">۲۸۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
+
+    </div>
+  </section>
     
-<section class="menu-category">
-  <h2 id="title">انواع برنج</h2>
- <table class="menu-table">
-    <tbody>
-      <tr>
-        <td><img src="../../images/rice-resturant.jpg" alt="برنج" class="menu-img"></td>
-        <td>برنج</td>
-        <td>150,000 تومان</td>
-      </tr>
-    </tbody>
-        <tbody>
-      <tr>
-        <td><img src="../../images/rice-resturant.jpg" alt="برنج" class="menu-img"></td>
-        <td>برنج</td>
-        <td>150,000 تومان</td>
-      </tr>
-    </tbody>
-  </table>
+  <!-- Rice Category -->
+  <section class="menu-category">
+    <h2 id="title">انواع برنج</h2>
+    <div class="product-grid">
 
-  <!-- Modal -->
-  <div class="modal" id="imageModal">
-    <img id="modalImage" src="" alt="نمایش بزرگ تصویر">
-  </div>
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/rice-resturant.jpg" alt="برنج زعفرانی" class="product-img" data-modal-target="#imageModal" data-img-src="../../images/resturant/ce-large.jpg">
+        <h3 class="product-name">برنج زعفرانی درجه یک</h3>
+        <p class="product-price">۵۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
 
-</section>
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/rice-resturant.jpg" alt="برنج زرشک پلو" class="product-img" data-modal-target="#imageModal" data-img-src="images/barberry-rice-large.jpg">
+        <h3 class="product-name">زرشک پلو با مرغ</h3>
+        <p class="product-price">۱۶۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
+
+      <div class="resturant-product-card">
+        <img src="../../images/resturant/rice-resturant.jpg" alt="برنج زرشک پلو" class="product-img" data-modal-target="#imageModal" data-img-src="images/barberry-rice-large.jpg">
+        <h3 class="product-name">زرشک پلو با مرغ</h3>
+        <p class="product-price">۱۶۰,۰۰۰ تومان</p>
+        <!-- <button class="btn-order">افزودن به سبد</button> -->
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<!----------------------- product --------------------->
 
 <section class="products">
 <h2>محصولات ما</h2>
@@ -131,7 +142,7 @@
 <div class="product-grid">
 
 <div class="product-card">
-<img src="../../images/fish.png">
+<img src="../../images/product/fish.png">
 <h3>ماهی قزل‌آلا</h3>
 <p>پرورش یافته در آب سالم کوهستانی</p>
 <a class="look" style="background-color: #f06d9d ; color: aliceblue;" href="../fish/fish.html">مشاهده</a>
@@ -139,21 +150,21 @@
 
 
 <div class="product-card">
-<img src="../../images/apple.png">
+<img src="../../images/product/apple.png">
 <h3>سیب قرمز</h3>
 <p>سیب تازه باغات کوهستانی</p>
 <a class="look" style="background-color: #A60C0D ; color: aliceblue;" href="../applle/applle.html">مشاهده</a>
 </div>
 
 <div class="product-card">
-<img src="../../images/others (32).png">
+<img src="../../images/product/others (32).png">
 <h3>محصولات باغی</h3>
 <p>انواع میوه‌های تازه</p>
 <a class="look" style="background-color: #666E33 ; color : aliceblue;" href="../others/others.html">مشاهده</a>
 </div>
 
 <div class="product-card">
-<img src="../../images/zaferan (2).png">
+<img src="../../images/product/zaferan (2).png">
 <h3>زعفران ممتاز</h3>
 <p>زعفران کاملاً طبیعی و خالص</p>
 <a class="look" style="background-color: #46133A ; color : aliceblue ; " href="../zaferon/zaferon.html">مشاهده</a>
@@ -191,6 +202,6 @@
 <footer>
 <a class="Remox-Code"  href="https://t.me/Remox_4">Remox-Code.com</a>
 </footer>
-<script src="restaurant.js"></script>
+<script src="../../all-pages-css-js/all.js"></script>
 </body>
 </html>

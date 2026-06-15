@@ -1,66 +1,6 @@
-.menu-table {
-  width: 100%;
-  border-collapse: collapse;
-  background: white;
-  border-radius: 10px;
-  overflow: hidden;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-}
-
-.menu-table th,
-.menu-table td {
-  padding: 15px;
-  text-align: center;
-  border-bottom: 1px solid #eee;
-  font-weight: 500;
-  font-size: 20px;
-}
-.menu-table th {
-  font-weight: 700;
-  font-size: 25px;
-}
-
-.menu-table th {
-  background: #f0f0f0;
-}
-
-.menu-table img {
-  width: 80px;
-  height: 80px;
-  object-fit: cover;
-  border-radius: 8px;
-  cursor: pointer;
-  transition: transform 0.2s ease;
-}
-
-.menu-table img:hover {
-  transform: scale(1.05);
-}
-
-/* Modal */
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.7);
-  justify-content: center;
-  align-items: center;
-  z-index: 9999;
-}
-
-.modal img {
-  max-width: 100%;
-  max-height: 100%;
-  border-radius: 12px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-}
-
-.modal.show {
-  display: flex;
-}
 #title {
   text-align: center;
-  margin: 100px auto 50px auto;
+  margin: 50px auto 50px auto;
   background-color: #1f4d2b;
   width: fit-content;
   padding: 10px 20px;
@@ -68,74 +8,132 @@
   border-radius: 10px;
   box-shadow: 0 10px 20px rgb(141, 141, 141);
 }
-.products {
-  padding: 80px 10%;
-  text-align: center;
+
+.menu {
+  max-width: 1200px;
+  margin: 50px auto 0 auto;
 }
 
-.products h2 {
+.menu-category {
   margin-bottom: 40px;
-  font-size: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 15px;
+  padding: 30px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
 }
-.products p {
-  margin-top: 20px;
-  margin-bottom: 20px;
-  font-size: 20px;
+
+.menu-category h2::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background-color: #f06d9d;
+  border-radius: 2px;
 }
+
 .product-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 25px;
 }
 
-.product-card {
-  background: white;
+.resturant-product-card {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+  text-align: center;
   padding: 20px;
-  border-radius: 15px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  transition: 0.3s;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .product-card:hover {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
 }
 
-.product-card img {
+.product-img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: 3px solid transparent;
+  transition: border-color 0.3s ease;
+}
+
+.product-card:hover .product-img {
+  border-color: #f06d9d;
+}
+
+.product-name {
+  font-size: 1.3em;
+  color: #444;
   margin-bottom: 10px;
-}
-.look {
-  text-decoration: none;
-  border-radius: 40px;
-  padding: 3px 10px 3px 10px;
-  font-size: 20px;
-}
-.look:hover {
-  padding: 5px 12px 5px 12px;
-  transition: ease 0.25s;
+  font-weight: bold;
 }
 
-/* contact */
+.product-price {
+  font-size: 1.1em;
+  color: #d6336c;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
 
-.contact {
-  padding: 20px 5%;
-  background: #1f4d2b;
+.btn-order {
+  background-color: #f06d9d;
   color: white;
-  text-align: center;
+  padding: 12px 25px;
+  border: none;
+  border-radius: 25px;
+  font-size: 1em;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    transform 0.2s ease;
+  margin-top: auto;
 }
 
-.contact-box {
-  display: flex;
+.btn-order:hover {
+  background-color: #d6336c;
+  transform: translateY(-2px);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.8);
   justify-content: center;
-  gap: 50px;
-  flex-wrap: wrap;
+  align-items: center;
+  z-index: 10000;
+  opacity: 0;
+  transition: opacity 0.4s ease-in-out;
 }
 
-.contact-item {
-  background: #3a7d44;
-  padding: 5px 10px;
-  border-radius: 10px;
+.modal.show {
+  display: flex;
+  opacity: 1;
+}
+
+.modal img {
+  max-width: 90%;
+  max-height: 85%;
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
+  transform: scale(0.9);
+  transition: transform 0.4s ease-in-out;
+}
+
+.modal.show img {
+  transform: scale(1);
 }
