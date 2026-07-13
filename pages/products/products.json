@@ -1,0 +1,114 @@
+{
+  "page": {
+    "title": "سیب",
+    "description": "یک سایت برای محصولات کشاورزی و دامداری",
+    "keywords": [
+      "کشاورزی",
+      "دامداری",
+      "ماهی",
+      "قزل آلا",
+      "زعفران",
+      "ماهی قزل آلا",
+      "پرورش ماهی",
+      "زعفران ایرانی",
+      "سیب",
+      "سیب قرمز",
+      "سیب زرد",
+      "گیلاس",
+      "آلوچه",
+      "گلابی",
+      "زرد آلو"
+    ],
+    "author": "کشت و صنعت حامد",
+    "url": "https://site.com/home"
+  },
+  "products": [
+    {
+      "id": 1,
+      "title": "سیب قرمز کاملا اورگانیک و طبیعی",
+      "description": "سیب قرمز یکی از مفیدترین و خوشمزه ترین میوه های تابستانی است این میوه علاوه بر ظاهر زیبا و دلنشین مزه بسیار خوبی دارد. سیب های قرمز ما یکجا زیبایی، مزه خوب و آبداری را به شما می‌دهند.",
+      "price": {
+        "value": 500000,
+        "currency": "تومان",
+        "unit": "کیلوگرم"
+      },
+      "images": [
+        "../../images/apple/apple (2).jpg",
+        "../../images/apple/apple (3).jpg",
+        "../../images/apple/apple (4).jpg",
+        "../../images/apple/apple (5).jpg",
+        "../../images/apple/apple (6).jpg"
+      ]
+    },
+    {
+      "id": 2,
+      "title": "زعفران طبیعی و خالص",
+      "description": "زعفران یکی از با ارزش ترین مواد غذایی است که کاربردهای مختلفی دارد؛ از جمله استفاده در خورشت، برنج و سایر غذاها. زعفران‌های ما با کیفیت بالا، کاملاً خالص و بدون هیچ‌گونه افزودنی شیمیایی هستند.",
+      "price": {
+        "value": 500000,
+        "currency": "تومان",
+        "unit": "کیلوگرم"
+      },
+      "images": [
+        "../../images/zaferan/zaferan (1).png",
+        "../../images/zaferan/zaferan (1).png",
+        "../../images/zaferan/zaferan (1).png",
+        "../../images/zaferan/zaferan (1).png",
+        "../../images/zaferan/zaferan (1).png"
+      ]
+    },
+    {
+      "id": 3,
+      "title": "ماهی قزل‌آلا تازه صید شده",
+      "description": "ماهی قزل‌آلا یکی از سالم‌ترین و خوش‌طعم‌ترین ماهی‌های آب شیرین است. این ماهی منبع عالی امگا ۳، پروتئین باکیفیت و ویتامین‌های مهم بدن است. طعم لذیذ و گوشت نرم آن باعث شده یکی از محبوب‌ترین انتخاب‌ها برای کباب، سرخ‌کردنی و شکم‌پر باشد.",
+      "price": {
+        "value": 500000,
+        "currency": "تومان",
+        "unit": "کیلوگرم"
+      },
+      "images": [
+        "../../images/fish/fish1.jpg",
+        "../../images/fish/fish1.jpg",
+        "../../images/fish/fish1.jpg",
+        "../../images/fish/fish2.jpg",
+        "../../images/fish/fish3.jpg"
+      ]
+    }
+  ],
+  "otherProducts": {
+    "title": "دیگر محصولات ما",
+    "description": "در باغ های ما علاوه بر سیب و زعفران محصولات دیگری نیز کشت میشوند از جمله: زردآلو، گیلاس، آلبالو، گلابی، به و... تمامی محصولات کاملاً طبیعی و با کیفیت بالا هستند.",
+    "images": [
+      "../../images/others/others (31).jpg",
+      "../../images/others/others (2).jpg",
+      "../../images/others/others (3).jpg",
+      "../../images/others/others (4).jpg",
+      "../../images/others/others (5).jpg",
+      "../../images/others/others (6).jpg",
+      "../../images/others/others (7).jpg",
+      "../../images/others/others (8).jpg",
+      "../../images/others/others (9).jpg",
+      "../../images/others/others (10).jpg",
+      "../../images/others/others (11).jpg",
+      "../../images/others/others (12).jpg",
+      "../../images/others/others (13).jpg",
+      "../../images/others/others (14).jpg",
+      "../../images/others/others (15).jpg",
+      "../../images/others/others (16).jpg",
+      "../../images/others/others (17).jpg",
+      "../../images/others/others (18).jpg",
+      "../../images/others/others (19).jpg",
+      "../../images/others/others (20).jpg",
+      "../../images/others/others (21).jpg",
+      "../../images/others/others (22).jpg",
+      "../../images/others/others (23).jpg",
+      "../../images/others/others (24).jpg",
+      "../../images/others/others (25).jpg",
+      "../../images/others/others (26).jpg",
+      "../../images/others/others (27).jpg",
+      "../../images/others/others (28).jpg",
+      "../../images/others/others (29).jpg",
+      "../../images/others/others (30).jpg"
+    ]
+  }
+}
