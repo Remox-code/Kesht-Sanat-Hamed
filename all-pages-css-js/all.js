@@ -28,7 +28,11 @@ document.addEventListener("DOMContentLoaded", async () => {
   // بارگذاری هدر و فوتر
   await loadComponent("header", BASE + "components/header.html");
   await loadComponent("footer", BASE + "components/footer.html");
+  const logo = document.getElementById("logo-img");
 
+  if (logo) {
+    logo.src = BASE + "images/logo.jpg";
+  }
   // ===============================
   // منوی همبرگری
   // ===============================
