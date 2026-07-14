@@ -50,6 +50,7 @@ body {
   transition: ease 0.5s;
   width: fit-content;
   border-radius: 10px;
+  padding: 10px;
 }
 .logo {
   display: flex;
@@ -162,7 +163,7 @@ body {
   list-style: none;
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 20px;
 }
 
 .footer-section li a {
@@ -172,10 +173,13 @@ body {
 }
 .footer-section li a:hover {
   color: rgb(255, 191, 63);
+  transition: 0.25s;
 }
 .footer-section .active {
-  color: rgb(255, 185, 44);
+  color: rgb(255, 255, 255);
   font-weight: bold;
+  background-color: #154b19;
+  box-shadow: 0 10px 10px rgba(123, 123, 123, 0);
 }
 .footer-bottom {
   margin-top: 40px;
