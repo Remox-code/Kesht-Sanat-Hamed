@@ -107,33 +107,52 @@
   background-color: #d6336c;
   transform: translateY(-2px);
 }
+@media (max-width: 768px) {
+  .product-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
 
-.modal {
-  display: none;
-  position: fixed;
-  inset: 0;
-  background: rgba(0, 0, 0, 0.8);
-  justify-content: center;
-  align-items: center;
-  z-index: 10000;
-  opacity: 0;
-  transition: opacity 0.4s ease-in-out;
+  .resturant-product-card {
+    padding: 12px;
+  }
+
+  .product-img {
+    height: 120px;
+  }
+
+  .product-name {
+    font-size: 15px;
+  }
+
+  .product-price {
+    font-size: 14px;
+    margin-bottom: 8px;
+  }
 }
+@media (max-width: 480px) {
+  .menu-category {
+    padding: 15px;
+  }
 
-.modal.show {
-  display: flex;
-  opacity: 1;
-}
+  .product-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 10px;
+  }
 
-.modal img {
-  max-width: 90%;
-  max-height: 85%;
-  border-radius: 15px;
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5);
-  transform: scale(0.9);
-  transition: transform 0.4s ease-in-out;
-}
+  .resturant-product-card {
+    padding: 10px;
+  }
 
-.modal.show img {
-  transform: scale(1);
+  .product-img {
+    height: 100px;
+  }
+
+  .product-name {
+    font-size: 13px;
+  }
+
+  .product-price {
+    font-size: 12px;
+  }
 }
