@@ -1,6 +1,19 @@
-// ===============================
-// بارگذاری کامپوننت
-// ===============================
+document.addEventListener("DOMContentLoaded", async () => {
+  window.BASE = window.BASE_PATH || "";
+
+  await loadComponent("header", BASE + "components/header.html");
+  await loadComponent("footer", BASE + "components/footer.html");
+  const logo = document.getElementById("logo-img");
+
+  if (logo) {
+    logo.src = BASE + "images/logo.jpg";
+  }
+
+  initNavigation();
+  setAvailability(1);
+  loadImages();
+  initFadeAnimation();
+});
 
 async function loadComponent(id, file) {
   const element = document.getElementById(id);
@@ -10,7 +23,9 @@ async function loadComponent(id, file) {
   try {
     const response = await fetch(file);
 
-    if (!response.ok) throw new Error(`خطا در بارگذاری ${file}`);
+    if (!response.ok) {
+      throw new Error("Failed to load: " + file);
+    }
 
     element.innerHTML = await response.text();
   } catch (err) {
@@ -18,47 +33,14 @@ async function loadComponent(id, file) {
   }
 }
 
-// ===============================
-// اجرای اولیه
-// ===============================
-
-document.addEventListener("DOMContentLoaded", async () => {
-  const BASE = window.BASE_PATH || "";
-
-  // بارگذاری هدر و فوتر
-  await loadComponent("header", BASE + "components/header.html");
-  await loadComponent("footer", BASE + "components/footer.html");
-  const logo = document.getElementById("logo-img");
-
-  if (logo) {
-    logo.src = BASE + "images/logo.jpg";
-  }
-  // ===============================
-  // منوی همبرگری
-  // ===============================
-
-  window.openMenu = function () {
-    document.getElementById("sideMenu")?.classList.add("open");
-    document.getElementById("overlay")?.classList.add("show");
-  };
-
-  window.closeMenu = function () {
-    document.getElementById("sideMenu")?.classList.remove("open");
-    document.getElementById("overlay")?.classList.remove("show");
-  };
-
-  // ===============================
-  // مسیر صفحات
-  // ===============================
-
+function initNavigation() {
   const routes = {
     home: "index.html",
-    products: "pages/products/products.html",
     restaurant: "pages/restaurant/restaurant.html",
     contact: "pages/contact/contact.html",
+    products: "pages/products/products.html",
   };
 
-  // لینک‌ها
   document.querySelectorAll("[data-page]").forEach((link) => {
     const page = link.dataset.page;
 
@@ -67,29 +49,19 @@ document.addEventListener("DOMContentLoaded", async () => {
     }
   });
 
-  // ===============================
-  // لینک فعال
-  // ===============================
-
-  const currentPage = location.pathname.split("/").pop();
+  const currentPage = document.body.dataset.page;
 
   document.querySelectorAll("[data-page]").forEach((link) => {
-    const page = link.dataset.page;
+    link.classList.remove("active");
 
-    if (!routes[page]) return;
-
-    const routeFile = routes[page].split("/").pop();
-
-    if (routeFile === currentPage) {
+    if (link.dataset.page === currentPage) {
       link.classList.add("active");
     }
   });
+}
 
-  // ===============================
-  // لینک‌های اسکرول (در صورت وجود)
-  // ===============================
-
-  document.querySelectorAll("[data-scroll]").forEach((link) => {
-    link.href = BASE + routes.products + "#" + link.dataset.scroll;
+function loadImages() {
+  document.querySelectorAll("[data-src]").forEach((img) => {
+    img.src = BASE + img.dataset.src;
   });
-});
+}

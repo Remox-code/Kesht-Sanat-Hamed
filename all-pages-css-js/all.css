@@ -45,7 +45,6 @@ body {
   font-weight: bold;
 }
 
-.active,
 .category-nav a:hover,
 .category-nav .active {
   background-color: #ffe49a;
