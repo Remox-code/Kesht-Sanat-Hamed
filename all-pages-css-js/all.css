@@ -44,7 +44,7 @@ body {
   padding: 5px 10px;
   font-weight: bold;
 }
-
+.side-menu .active,
 .category-nav a:hover,
 .category-nav .active {
   background-color: #ffe49a;
@@ -182,6 +182,8 @@ body {
   font-weight: bold;
   background-color: #154b19;
   box-shadow: 0 10px 10px rgba(123, 123, 123, 0);
+  padding: 10px;
+  border-radius: 10px;
 }
 .footer-bottom {
   margin-top: 40px;

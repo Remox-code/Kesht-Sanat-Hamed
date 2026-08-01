@@ -14,7 +14,15 @@ document.addEventListener("DOMContentLoaded", async () => {
   loadImages();
   initFadeAnimation();
 });
+window.openMenu = function () {
+  document.getElementById("sideMenu")?.classList.add("open");
+  document.getElementById("overlay")?.classList.add("show");
+};
 
+window.closeMenu = function () {
+  document.getElementById("sideMenu")?.classList.remove("open");
+  document.getElementById("overlay")?.classList.remove("show");
+};
 async function loadComponent(id, file) {
   const element = document.getElementById(id);
 
